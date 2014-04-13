@@ -14,7 +14,7 @@ App : ZFin mobile App mockup
 
         <div data-role="page" id="home" data-url="demo-page">
             <div data-role="header">
-                <img src="Logo.jpg" alt=""  HSPACE="50"/> 
+                <center><img src="ZT_Logo_big.png" alt="" width="50%" height="50%"/> </center>
                 <a href="#left-panel-home" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div><!-- /header -->
 
@@ -43,21 +43,24 @@ App : ZFin mobile App mockup
         </div> 
         <div data-role="page" id="DLpage" data-url="demo-page">
             <div data-role="header">
-                <img src="Logo.jpg" alt=""  HSPACE="50"/>  
+                <center><img src="ZT_Logo_big.png" alt="" width="50%" height="50%"/> </center>
                 <a href="#left-panel-DL" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div><!-- /header -->
 
             <div data-role="content" class="ui-field-contain">
                 <center><h2>Daily Collection</h2></center>
-                <label for="select-native-1">Collection Area</label>
-                <select name="select-native-1" id="select-native-1">
-                    <option value="small">Karur</option>
-                    <option value="medium">Coimbatore</option>
-                    <option value="large">Trichy</option>
-                </select>
-
-                <label for="select-native-1">Date</label>
-                <input type="date">
+                <div class="ui-field-contain">
+                    <label for="select-native-dl">Collection Area</label>
+                    <select name="select-native-dl" id="select-native-1">
+                        <option value="small">Karur</option>
+                        <option value="medium">Coimbatore</option>
+                        <option value="large">Trichy</option>
+                    </select>
+                </div>
+                <div class="ui-field-contain">
+                    <label for="select-native-1">Date</label>
+                    <input type="date"> 
+                </div>
 
                 <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
                     <thead>
@@ -286,7 +289,7 @@ App : ZFin mobile App mockup
 
         <div data-role="page" id="MLpage" data-url="demo-page">
             <div data-role="header">
-                <img src="Logo.jpg" alt=""  HSPACE="50"/>  
+                <center><img src="ZT_Logo_big.png" alt="" width="50%" height="50%"/> </center>
                 <a href="#left-panel-ML" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div>
             <div data-role="content">
