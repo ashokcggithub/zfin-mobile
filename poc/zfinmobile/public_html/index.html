@@ -14,12 +14,12 @@ App : ZFin mobile App mockup
 
         <div data-role="page" id="home" data-url="demo-page">
             <div data-role="header">
-                <center><img src="Logo.jpg" alt=""/></center>
+                <img src="Logo.jpg" alt=""  HSPACE="50"/> 
                 <a href="#left-panel-home" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div><!-- /header -->
 
             <div data-role="content" class="ui-field-contain">
-                <center><h1>Home</h1></center>
+                <center><h2>Home</h2></center>
                 <label for="select-native-1">Select Company</label>
                 <select name="select-native-1" id="select-native-1">
                     <option value="small">Vinayaga</option>
@@ -31,10 +31,11 @@ App : ZFin mobile App mockup
             <div data-role="panel" id="left-panel-home">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#home"><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">home</button></a></li>
-                    <li><a href="#DLpage"><img id="imgDL" alt="" src="DL.png" title="Daily Collection" /></a></li>
-                    <li><a href="#MLpage"><img id="imgML" alt="" src="ML.png" title="Monthly Collection"/></a></li>                    
-                    <li data-role="list-divider">LogOut</li> 
+                    <li><a href="#home"> Home </a></li>
+                    <li><a href="#DLpage"> Daily Collection </a></li>
+                    <li><a href="#MLpage"> Monthly Collection </a></li>                    
+                    <li><a href="#">LogOut</a></li>
+
                 </ul>
                 <ul data-role="listview">
                 </ul>
@@ -42,11 +43,12 @@ App : ZFin mobile App mockup
         </div> 
         <div data-role="page" id="DLpage" data-url="demo-page">
             <div data-role="header">
-                <h1>Daily Collection</h1>
+                <img src="Logo.jpg" alt=""  HSPACE="50"/>  
                 <a href="#left-panel-DL" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div><!-- /header -->
 
             <div data-role="content" class="ui-field-contain">
+                <center><h2>Daily Collection</h2></center>
                 <label for="select-native-1">Collection Area</label>
                 <select name="select-native-1" id="select-native-1">
                     <option value="small">Karur</option>
@@ -272,24 +274,23 @@ App : ZFin mobile App mockup
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#"><img id="imgDL" alt="" src="DL.png" title="Daily Collection" /></a></li>
-                    <li><a href="#MLpage"><img id="imgML" alt="" src="ML.png" title="Monthly Collection"/></a></li>                    
-                    <li data-role="list-divider">LogOut</li> 
+                    <li><a href="#"> Daily Collection </a></li>
+                    <li><a href="#MLpage"> Monthly Collection </a></li>                    
+                    <li><a href="#">LogOut</a></li>
                 </ul>
                 <ul data-role="listview">
                 </ul>
             </div><!-- /panel --> 
-            <div data-role="footer">
-                <center><img src="Logo.jpg" alt=""/></center>
-            </div>
+
         </div> 
 
         <div data-role="page" id="MLpage" data-url="demo-page">
             <div data-role="header">
-                <img src="Logo.jpg" alt=""  HSPACE="50"/> <center>  Monthly Collection  </center>
+                <img src="Logo.jpg" alt=""  HSPACE="50"/>  
                 <a href="#left-panel-ML" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div>
             <div data-role="content">
+                <center><h2>Monthly Collection</h2></center>
                 <div class="ui-field-contain">
                     <label for="select-native-1">Type</label>
                     <select name="select-native-1" id="select-native-1">
@@ -520,11 +521,9 @@ App : ZFin mobile App mockup
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#DLpage"><img id="imgDL" alt="" src="DL.png" title="Daily Collection" /></a></li>
-                    <li><a href="#"><img id="imgML" alt="" src="ML.png" title="Monthly Collection"/></a></li>                    
-                    <li data-role="list-divider">LogOut</li>
-                </ul>
-                <ul data-role="listview">
+                    <li><a href="#DLpage"> Daily Collection </a></li>
+                    <li><a href="#"> Monthly Collection </a></li>                    
+                    <li><a href="#">LogOut</a></li>
                 </ul>
             </div><!-- /panel --> 
         </div>    
