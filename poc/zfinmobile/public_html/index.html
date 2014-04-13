@@ -11,31 +11,28 @@ App : ZFin mobile App mockup
         <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
     </head>
     <body>
-        <div data-role="page" id="DLpage" data-url="demo-page">
+
+        <div data-role="page" id="home" data-url="demo-page">
             <div data-role="header">
-                <h1>Daily Collection</h1>
-                 <a href="#left-panel-DL" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
-                <div class="ui-field-contain">
-                    <label for="select-native-1">Collection Area:</label>
-                    <select name="select-native-1" id="select-native-1">
-                        <option value="small">Karur</option>
-                        <option value="medium">Coimbatore</option>
-                        <option value="large">Trichy</option>
-                    </select>
-                </div>
-                <div class="ui-field-contain">
-                    <label for="select-native-1">Date:</label>
-                    <input type="date"> 
-                </div>
+                <center><img src="Logo.jpg" alt=""/></center>
+                <a href="#left-panel-home" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
             </div><!-- /header -->
-            <div role="main" class="ui-content">
-                <div class="article"> 
-                </div><!-- /article -->
-            </div><!-- /content -->
-            <div data-role="panel" id="left-panel-DL">
+
+            <div data-role="content" class="ui-field-contain">
+                <center><h1>Home</h1></center>
+                <label for="select-native-1">Select Company</label>
+                <select name="select-native-1" id="select-native-1">
+                    <option value="small">Vinayaga</option>
+                    <option value="medium">murugan</option>
+                    <option value="large">bawa</option>
+                </select>
+
+            </div>
+            <div data-role="panel" id="left-panel-home">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                    <li><a href="#"><img id="imgDL" alt="" src="DL.png" title="Daily Collection" /></a></li>
+                    <li><a href="#home"><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">home</button></a></li>
+                    <li><a href="#DLpage"><img id="imgDL" alt="" src="DL.png" title="Daily Collection" /></a></li>
                     <li><a href="#MLpage"><img id="imgML" alt="" src="ML.png" title="Monthly Collection"/></a></li>                    
                     <li data-role="list-divider">LogOut</li> 
                 </ul>
@@ -43,13 +40,258 @@ App : ZFin mobile App mockup
                 </ul>
             </div><!-- /panel --> 
         </div> 
+        <div data-role="page" id="DLpage" data-url="demo-page">
+            <div data-role="header">
+                <h1>Daily Collection</h1>
+                <a href="#left-panel-DL" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div><!-- /header -->
+
+            <div data-role="content" class="ui-field-contain">
+                <label for="select-native-1">Collection Area</label>
+                <select name="select-native-1" id="select-native-1">
+                    <option value="small">Karur</option>
+                    <option value="medium">Coimbatore</option>
+                    <option value="large">Trichy</option>
+                </select>
+
+                <label for="select-native-1">Date</label>
+                <input type="date">
+
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+                    <thead>
+                        <tr>
+                            <th data-priority="2">#</th>
+                            <th>Customer Name</th>
+                            <th data-priority="3" title="Customer Due Amount">Due Amount</th>
+                            <th data-priority="1"><abbr title="customer Rating">Rating</abbr></th>
+                            <th data-priority="5">Reviews</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
+                            <td>1941</td>
+                            <td>100%</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
+                            <td>1942</td>
+                            <td>97%</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">The Godfather</a></td>
+                            <td>1972</td>
+                            <td>97%</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Gone with the Wind</a></td>
+                            <td>1939</td>
+                            <td>96%</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+                            <td>1962</td>
+                            <td>94%</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                            <td>1964</td>
+                            <td>92%</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+                            <td>1967</td>
+                            <td>91%</td>
+                            <td>122</td>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+                            <td>1939</td>
+                            <td>90%</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+                            <td>1952</td>
+                            <td>89%</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+                            <td>2010</td>
+                            <td>84%</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+                            <td>1962</td>
+                            <td>94%</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                            <td>1964</td>
+                            <td>92%</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+                            <td>1967</td>
+                            <td>91%</td>
+                            <td>122</td>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+                            <td>1939</td>
+                            <td>90%</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+                            <td>1952</td>
+                            <td>89%</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+                            <td>2010</td>
+                            <td>84%</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+                            <td>1962</td>
+                            <td>94%</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                            <td>1964</td>
+                            <td>92%</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+                            <td>1967</td>
+                            <td>91%</td>
+                            <td>122</td>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+                            <td>1939</td>
+                            <td>90%</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+                            <td>1952</td>
+                            <td>89%</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+                            <td>2010</td>
+                            <td>84%</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+                            <td>1962</td>
+                            <td>94%</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                            <td>1964</td>
+                            <td>92%</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+                            <td>1967</td>
+                            <td>91%</td>
+                            <td>122</td>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+                            <td>1939</td>
+                            <td>90%</td>
+                            <td>72</td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+                            <td>1952</td>
+                            <td>89%</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+                            <td>2010</td>
+                            <td>84%</td>
+                            <td>78</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div data-role="panel" id="left-panel-DL">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#"><img id="imgDL" alt="" src="DL.png" title="Daily Collection" /></a></li>
+                    <li><a href="#MLpage"><img id="imgML" alt="" src="ML.png" title="Monthly Collection"/></a></li>                    
+                    <li data-role="list-divider">LogOut</li> 
+                </ul>
+                <ul data-role="listview">
+                </ul>
+            </div><!-- /panel --> 
+            <div data-role="footer">
+                <center><img src="Logo.jpg" alt=""/></center>
+            </div>
+        </div> 
 
         <div data-role="page" id="MLpage" data-url="demo-page">
             <div data-role="header">
-                <h1>Monthly Collection</h1>
+                <img src="Logo.jpg" alt=""  HSPACE="50"/> <center>  Monthly Collection  </center>
                 <a href="#left-panel-ML" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div data-role="content">
                 <div class="ui-field-contain">
-                    <label for="select-native-1">Type:</label>
+                    <label for="select-native-1">Type</label>
                     <select name="select-native-1" id="select-native-1">
                         <option value="small">Party Loan</option>
                         <option value="medium">Loan From Other Finance</option>
@@ -57,17 +299,227 @@ App : ZFin mobile App mockup
                     </select>
                 </div>
                 <div class="ui-field-contain">
-                    <label for="select-native-1">Date:</label>
+                    <label for="select-native-1">Date</label>
                     <input type="date"> 
                 </div>
-            </div><!-- /header -->
-            <div role="main" class="ui-content">
-                <div class="article"> 
-                </div><!-- /article -->
+                <div>
+
+                    <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+                        <thead>
+                            <tr>
+                                <th data-priority="2">#</th>
+                                <th>Customer Name</th>
+                                <th data-priority="3" title="Customer Due Amount">Due Amount</th>
+                                <th data-priority="1"><abbr title="customer Rating">Rating</abbr></th>
+                                <th data-priority="5">Reviews</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
+                                <td>1941</td>
+                                <td>100%</td>
+                                <td>74</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
+                                <td>1942</td>
+                                <td>97%</td>
+                                <td>64</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">The Godfather</a></td>
+                                <td>1972</td>
+                                <td>97%</td>
+                                <td>87</td>
+                            </tr>
+                            <tr>
+                                <th>4</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Gone with the Wind</a></td>
+                                <td>1939</td>
+                                <td>96%</td>
+                                <td>87</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+                                <td>1962</td>
+                                <td>94%</td>
+                                <td>87</td>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                                <td>1964</td>
+                                <td>92%</td>
+                                <td>74</td>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+                                <td>1967</td>
+                                <td>91%</td>
+                                <td>122</td>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+                                <td>1939</td>
+                                <td>90%</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+                                <td>1952</td>
+                                <td>89%</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+                                <td>2010</td>
+                                <td>84%</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+                                <td>1962</td>
+                                <td>94%</td>
+                                <td>87</td>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                                <td>1964</td>
+                                <td>92%</td>
+                                <td>74</td>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+                                <td>1967</td>
+                                <td>91%</td>
+                                <td>122</td>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+                                <td>1939</td>
+                                <td>90%</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+                                <td>1952</td>
+                                <td>89%</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+                                <td>2010</td>
+                                <td>84%</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+                                <td>1962</td>
+                                <td>94%</td>
+                                <td>87</td>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                                <td>1964</td>
+                                <td>92%</td>
+                                <td>74</td>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+                                <td>1967</td>
+                                <td>91%</td>
+                                <td>122</td>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+                                <td>1939</td>
+                                <td>90%</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+                                <td>1952</td>
+                                <td>89%</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+                                <td>2010</td>
+                                <td>84%</td>
+                                <td>78</td>
+                            </tr>
+                            <tr>
+                                <th>5</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+                                <td>1962</td>
+                                <td>94%</td>
+                                <td>87</td>
+                            </tr>
+                            <tr>
+                                <th>6</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+                                <td>1964</td>
+                                <td>92%</td>
+                                <td>74</td>
+                            </tr>
+                            <tr>
+                                <th>7</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+                                <td>1967</td>
+                                <td>91%</td>
+                                <td>122</td>
+                            </tr>
+                            <tr>
+                                <th>8</th>
+                                <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+                                <td>1939</td>
+                                <td>90%</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <th>9</th>
+                                <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+                                <td>1952</td>
+                                <td>89%</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <th>10</th>
+                                <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+                                <td>2010</td>
+                                <td>84%</td>
+                                <td>78</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /header --> 
             </div><!-- /content -->
             <div data-role="panel" id="left-panel-ML">
                 <ul data-role="listview">
                     <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#DLpage"><img id="imgDL" alt="" src="DL.png" title="Daily Collection" /></a></li>
                     <li><a href="#"><img id="imgML" alt="" src="ML.png" title="Monthly Collection"/></a></li>                    
                     <li data-role="list-divider">LogOut</li>
